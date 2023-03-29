@@ -421,6 +421,7 @@
 
   --clr-accordion-error-color: var(--cds-alias-status-danger); // var(--clr-global-error-color);
   --clr-accordion-complete-color: var(--cds-alias-status-success); // var(--clr-global-success-color);
+  --clr-accordion-panel-disabled-color: var(--cds-alias-object-interaction-color-disabled); // var(--cds-global-color-construction-300, #aeb8bc))
   --clr-accordion-border-color: var(--cds-alias-object-border-color); // var(--clr-color-neutral-400);
 
   --clr-accordion-border-left-color: var(--cds-alias-object-border-color-tint); // #{$clr-accordion-border-left-color};

@@ -16,8 +16,9 @@ const defaultStory: Story = args => ({
       <clr-accordion-panel
         *ngFor="let _ of createArray(panelCount); let i = index"
         [clrAccordionPanelOpen]="!!openIndices[i]"
+        [clrAccordionPanelDisabled]="i === 2"
       >
-        <clr-accordion-title>{{title}} {{i + 1}}</clr-accordion-title>
+        <clr-accordion-title>{{i === 2 ? 'Disabled accordion panel' : title}}{{i !== 2 ? i + 1 : ''}}</clr-accordion-title>
         <clr-accordion-content>{{content}} {{i + 1}}</clr-accordion-content>
       </clr-accordion-panel>
     </clr-accordion>

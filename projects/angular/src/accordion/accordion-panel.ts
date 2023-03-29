@@ -32,13 +32,17 @@ import { panelAnimation } from './utils/animation';
 @Component({
   selector: 'clr-accordion-panel',
   templateUrl: './accordion-panel.html',
-  host: { '[class.clr-accordion-panel]': 'true' },
+  host: {
+    '[class.clr-accordion-panel]': 'true',
+    '[class.clr-accordion-panel-disabled]': 'disabled',
+  },
   changeDetection: ChangeDetectionStrategy.OnPush,
   animations: panelAnimation,
   providers: [IfExpandService],
 })
 export class ClrAccordionPanel implements OnInit, OnChanges {
-  @Input('clrAccordionPanelDisabled') disabled = false;
+  @Input('clrAccordionPanelDisabled')
+  disabled = false;
   @Input('clrAccordionPanelOpen') panelOpen = false;
   @Output('clrAccordionPanelOpenChange') panelOpenChange = new EventEmitter<boolean>();
   @ContentChildren(ClrAccordionDescription) accordionDescription: QueryList<ClrAccordionDescription>;
