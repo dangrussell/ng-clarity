@@ -140,21 +140,21 @@
 
 ## Class names
 
-| Class                    | Description                                               |
-| ------------------------ | --------------------------------------------------------- |
-| .btn                     | Styles a `button` element.                                |
-| .btn.btn-info            | Styles a `button` element as an info button.              |
-| .btn.btn-primary         | Styles a `button` element as a primary button.            |
-| .btn.btn-success         | Styles a `button` element as a success button.            |
-| .btn.btn-warning         | Styles a `button` element as a warning button.            |
-| .btn.btn-danger          | Styles a `button` element as a danger button.             |
-| .btn.btn-outline         | Styles a `button` element as an outline button.           |
-| .btn.btn-info-outline    | Styles a `button` element as an outline info button.      |
-| .btn.btn-success-outline | Styles a `button` element as an outline success button.   |
-| .btn.btn-warning-outline | Styles a `button` element as an outline warning button.   |
-| .btn.btn-danger-outline  | Styles a `button` element as an outline danger button.    |
-| .btn.btn-small           | Styles a `button` element as a small button.              |
-| .btn.btn-block           | Styles a `button` element as a block (full-width) button. |
-| .btn.btn-inverse         | Styles a `button` element as an inverse button.           |
-| .btn.btn-icon            | Styles a `button` element as an icon button.              |
-| .btn.btn-link            | Styles a `button` element as a link button.               |
+| Class name          | Description                                                                 |
+| ------------------- | --------------------------------------------------------------------------- |
+| btn                 | Styles a `button` element. All of the following require this class as well. |
+| btn-info            | Styles a `button` element as an info button.                                |
+| btn-primary         | Styles a `button` element as a primary button.                              |
+| btn-success         | Styles a `button` element as a success button.                              |
+| btn-warning         | Styles a `button` element as a warning button.                              |
+| btn-danger          | Styles a `button` element as a danger button.                               |
+| btn-outline         | Styles a `button` element as an outline button.                             |
+| btn-info-outline    | Styles a `button` element as an outline info button.                        |
+| btn-success-outline | Styles a `button` element as an outline success button.                     |
+| btn-warning-outline | Styles a `button` element as an outline warning button.                     |
+| btn-danger-outline  | Styles a `button` element as an outline danger button.                      |
+| btn-small           | Styles a `button` element as a small button.                                |
+| btn-block           | Styles a `button` element as a block, full-width button.                    |
+| btn-inverse         | Styles a `button` element as an inverse button.                             |
+| btn-icon            | Styles a `button` element as an icon button.                                |
+| btn-link            | Styles a `button` element as a link button.                                 |
