@@ -36,9 +36,7 @@ export class ClrDatalistInput extends WrappedFormControl<ClrDatalistContainer> i
     @Optional() private focusService: FocusService,
     vcr: ViewContainerRef,
     injector: Injector,
-    @Self()
-    @Optional()
-    control: NgControl,
+    @Self() @Optional() control: NgControl,
     renderer: Renderer2,
     el: ElementRef,
     private datalistIdService: DatalistIdService

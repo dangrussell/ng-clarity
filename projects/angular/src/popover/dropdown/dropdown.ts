@@ -29,9 +29,7 @@ export class ClrDropdown implements OnDestroy {
   private subscriptions: Subscription[] = [];
 
   constructor(
-    @SkipSelf()
-    @Optional()
-    public parent: ClrDropdown,
+    @SkipSelf() @Optional() public parent: ClrDropdown,
     public toggleService: ClrPopoverToggleService,
     public focusHandler: DropdownFocusHandler,
     private cdr: ChangeDetectorRef,

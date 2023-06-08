@@ -74,9 +74,7 @@ export class ClrOptions<T> implements AfterViewInit, LoadingListener, OnDestroy 
     public commonStrings: ClrCommonStringsService,
     private focusHandler: ComboboxFocusHandler<T>,
     private toggleService: ClrPopoverToggleService,
-    @Optional()
-    @Inject(POPOVER_HOST_ANCHOR)
-    parentHost: ElementRef,
+    @Optional() @Inject(POPOVER_HOST_ANCHOR) parentHost: ElementRef,
     @Inject(DOCUMENT) private document: any
   ) {
     if (!parentHost) {

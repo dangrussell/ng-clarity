@@ -103,12 +103,7 @@ export class ClrStackBlock implements OnInit {
    * querying for children StackBlocks, but this feature is not available when downgrading
    * the component for Angular 1.
    */
-  constructor(
-    @SkipSelf()
-    @Optional()
-    private parent: ClrStackBlock,
-    public commonStrings: ClrCommonStringsService
-  ) {
+  constructor(@SkipSelf() @Optional() private parent: ClrStackBlock, public commonStrings: ClrCommonStringsService) {
     if (parent) {
       parent.addChild();
     }

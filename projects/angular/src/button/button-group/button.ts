@@ -46,11 +46,7 @@ export class ClrButton implements LoadingListener {
   private _disabled: any = null;
   private _id: string = uniqueIdFactory();
 
-  constructor(
-    @SkipSelf()
-    @Optional()
-    public buttonInGroupService: ButtonInGroupService
-  ) {}
+  constructor(@SkipSelf() @Optional() public buttonInGroupService: ButtonInGroupService) {}
 
   @Input('clrInMenu')
   get inMenu(): boolean {

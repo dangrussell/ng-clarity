@@ -90,9 +90,7 @@ export class ClrTreeNode<T> implements OnInit, AfterContentInit, AfterViewInit, 
 
   constructor(
     @Inject(PLATFORM_ID) private platformId: any,
-    @Optional()
-    @SkipSelf()
-    parent: ClrTreeNode<T>,
+    @Optional() @SkipSelf() parent: ClrTreeNode<T>,
     public featuresService: TreeFeaturesService<T>,
     public expandService: IfExpandService,
     public commonStrings: ClrCommonStringsService,

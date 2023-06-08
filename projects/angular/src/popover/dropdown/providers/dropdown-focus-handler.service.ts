@@ -34,9 +34,7 @@ export class DropdownFocusHandler implements OnDestroy, FocusableItem {
 
   constructor(
     private renderer: Renderer2,
-    @SkipSelf()
-    @Optional()
-    private parent: DropdownFocusHandler,
+    @SkipSelf() @Optional() private parent: DropdownFocusHandler,
     private toggleService: ClrPopoverToggleService,
     private focusService: FocusService,
     @Inject(PLATFORM_ID) private platformId: any

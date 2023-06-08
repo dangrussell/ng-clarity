@@ -34,15 +34,11 @@ export class ClrPassword extends WrappedFormControl<ClrPasswordContainer> implem
   constructor(
     vcr: ViewContainerRef,
     injector: Injector,
-    @Self()
-    @Optional()
-    control: NgControl,
+    @Self() @Optional() control: NgControl,
     renderer: Renderer2,
     el: ElementRef,
     @Optional() private focusService: FocusService,
-    @Optional()
-    @Inject(TOGGLE_SERVICE)
-    private toggleService: BehaviorSubject<boolean>
+    @Optional() @Inject(TOGGLE_SERVICE) private toggleService: BehaviorSubject<boolean>
   ) {
     super(vcr, ClrPasswordContainer, injector, control, renderer, el);
 

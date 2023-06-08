@@ -39,9 +39,7 @@ export class ClrTooltipContent extends AbstractPopover implements OnInit {
 
   constructor(
     injector: Injector,
-    @Optional()
-    @Inject(POPOVER_HOST_ANCHOR)
-    parentHost: ElementRef,
+    @Optional() @Inject(POPOVER_HOST_ANCHOR) parentHost: ElementRef,
     private tooltipIdService: TooltipIdService,
     private tooltipMouseService: TooltipMouseService
   ) {

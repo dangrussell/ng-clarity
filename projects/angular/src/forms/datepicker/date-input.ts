@@ -69,9 +69,7 @@ export class ClrDateInput extends WrappedFormControl<ClrDateContainer> implement
     injector: Injector,
     protected override el: ElementRef,
     protected override renderer: Renderer2,
-    @Self()
-    @Optional()
-    protected control: NgControl,
+    @Self() @Optional() protected control: NgControl,
     @Optional() private container: ClrDateContainer,
     @Optional() private dateIOService: DateIOService,
     @Optional() private dateNavigationService: DateNavigationService,

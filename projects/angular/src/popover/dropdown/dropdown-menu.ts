@@ -39,12 +39,8 @@ export class ClrDropdownMenu extends AbstractPopover implements AfterContentInit
 
   constructor(
     injector: Injector,
-    @Optional()
-    @Inject(POPOVER_HOST_ANCHOR)
-    parentHost: ElementRef<HTMLElement>,
-    @Optional()
-    @SkipSelf()
-    nested: ClrDropdownMenu,
+    @Optional() @Inject(POPOVER_HOST_ANCHOR) parentHost: ElementRef<HTMLElement>,
+    @Optional() @SkipSelf() nested: ClrDropdownMenu,
     focusHandler: DropdownFocusHandler
   ) {
     if (!parentHost) {

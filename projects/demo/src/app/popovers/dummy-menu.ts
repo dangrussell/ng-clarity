@@ -20,9 +20,7 @@ import { DummyAnchor } from './dummy-anchor';
 export class DummyMenu extends AbstractPopover {
   constructor(
     injector: Injector,
-    @Optional()
-    @Inject(POPOVER_HOST_ANCHOR)
-    parentHost: ElementRef,
+    @Optional() @Inject(POPOVER_HOST_ANCHOR) parentHost: ElementRef,
     private parent: DummyAnchor
   ) {
     super(injector, parentHost);

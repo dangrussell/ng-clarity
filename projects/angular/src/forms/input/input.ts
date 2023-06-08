@@ -20,9 +20,7 @@ export class ClrInput extends WrappedFormControl<ClrInputContainer> {
   constructor(
     vcr: ViewContainerRef,
     injector: Injector,
-    @Self()
-    @Optional()
-    control: NgControl,
+    @Self() @Optional() control: NgControl,
     renderer: Renderer2,
     el: ElementRef
   ) {

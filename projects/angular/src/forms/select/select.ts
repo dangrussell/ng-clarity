@@ -20,9 +20,7 @@ export class ClrSelect extends WrappedFormControl<ClrSelectContainer> {
   constructor(
     vcr: ViewContainerRef,
     injector: Injector,
-    @Self()
-    @Optional()
-    control: NgControl,
+    @Self() @Optional() control: NgControl,
     renderer: Renderer2,
     el: ElementRef
   ) {

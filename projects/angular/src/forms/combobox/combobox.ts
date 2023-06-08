@@ -108,9 +108,7 @@ export class ClrCombobox<T>
   constructor(
     vcr: ViewContainerRef,
     injector: Injector,
-    @Self()
-    @Optional()
-    public control: NgControl,
+    @Self() @Optional() public control: NgControl,
     protected override renderer: Renderer2,
     protected override el: ElementRef,
     public optionSelectionService: OptionSelectionService<T>,
